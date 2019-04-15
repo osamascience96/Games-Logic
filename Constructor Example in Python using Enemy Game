@@ -1,0 +1,17 @@
+class Enemy:
+    # member variables 
+    energyLevel = 0
+
+    # constructor
+    def __init__(self, x):
+        self.energyLevel = x
+    
+    # function to check energy level 
+    def CheckEnergyLevel(self):
+        print('My Energy is ' + str(self.energyLevel))
+    
+client = Enemy(10)
+sitesh = Enemy(17)
+
+client.CheckEnergyLevel()
+sitesh.CheckEnergyLevel()
